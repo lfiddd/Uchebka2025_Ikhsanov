@@ -2,6 +2,7 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using Shop;
 
 namespace Uchebka2025_Ikhsanov.ControlPages;
 
@@ -14,21 +15,16 @@ public partial class ExamListForStud : UserControl
 
     private void MainPageEmployees(object? sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        NavigationService.NavigateTo<MainPageStud>();
     }
 
     private void DisciplineList(object? sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
-    }
-
-    private void ExamsList(object? sender, RoutedEventArgs e)
-    {
-        throw new System.NotImplementedException();
+        NavigationService.NavigateTo<DisciplineListForStud>();
     }
 
     private void Leave(object? sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        NavigationService.NavigateTo<StudentAuth>();
     }
 }

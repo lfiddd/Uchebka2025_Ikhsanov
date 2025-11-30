@@ -13,10 +13,6 @@ public partial class MainPageStud : UserControl
         InitializeComponent();
     }
 
-    private void MainPageStudents(object? sender, RoutedEventArgs e)
-    {
-        NavigationService.NavigateTo<MainPageStud>();
-    }
 
     private void DisciplineList(object? sender, RoutedEventArgs e)
     {

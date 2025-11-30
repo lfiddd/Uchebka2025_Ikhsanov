@@ -19,6 +19,9 @@
                     <Button Content="Главная страница" Margin="0,5" Click="MainPageEmployees"/>
                     <Button Content="Дисциплины" Margin="0,5" Click="DisciplineList"/>
                     <Button Content="Экзамены" Margin="0,5" Click="ExamsList"/>
+                    <Button Content="Преподаватели" Margin="0,5" Click="TeachList"/>
+                    <Button Content="Студенты" Margin="0,5" Click="StudList"/>
+                    
                     <StackPanel VerticalAlignment="Bottom">
                         <Button Content="Выход" Margin="0,5" Click="Leave"/>
                     </StackPanel>

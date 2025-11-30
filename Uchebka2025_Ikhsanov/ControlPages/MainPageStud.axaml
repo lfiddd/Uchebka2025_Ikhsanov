@@ -15,7 +15,7 @@
         <Border Grid.Column="0"  Background="Gray" Width="200">
             <StackPanel Margin="10">
                 <TextBlock Text="Страницы" FontWeight="Bold"/>
-                <Button Content="Главная страница" Margin="0,5" Click="MainPageStudents"/>
+              
                 <Button Content="Дисциплины" Margin="0,5" Click="DisciplineList"/>
                 <Button Content="Экзамены" Margin="0,5" Click="ExamsList"/>
                 <StackPanel VerticalAlignment="Bottom">
