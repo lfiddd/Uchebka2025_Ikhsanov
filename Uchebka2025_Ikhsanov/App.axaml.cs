@@ -1,14 +1,23 @@
-using Avalonia;
+using System.Linq;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using Uchebka2025_Ikhsanov.Data;
+using Application = Avalonia.Application;
 
 namespace Uchebka2025_Ikhsanov;
 
 public partial class App : Application
 {
+    public static AppDbContext DbContext { get; private set; } = new AppDbContext();
     public override void Initialize()
     {
-        AvaloniaXamlLoader.Load(this);
+        DbContext.Employees.ToList();
+        DbContext.Students.ToList();
+        DbContext.Logins.ToList();
+        DbContext.LoginStuds.ToList();
+        DbContext.Exams.ToList();
+        DbContext.Disciplines.ToList();
+        DbContext.Departments.ToList();
     }
 
     public override void OnFrameworkInitializationCompleted()

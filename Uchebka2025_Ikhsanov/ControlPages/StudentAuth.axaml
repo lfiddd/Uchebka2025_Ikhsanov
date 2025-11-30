@@ -1,0 +1,95 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Uchebka2025_Ikhsanov.ControlPages.StudentAuth">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+      
+        <TextBlock Text="Авторизация stud" 
+                   Grid.Column="1" 
+                   Grid.Row="1"
+                   Grid.ColumnSpan="4"
+                   FontSize="35"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+        <StackPanel Grid.Column="1"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="4"
+                    Orientation="Horizontal">
+            <TextBlock Text="Логин"
+                       FontSize="25"
+                       FontWeight="Heavy"
+                       VerticalAlignment="Center"
+                       />
+            <TextBox Name="LoginText"
+                     Width="200"
+                     Height="40"
+                     VerticalAlignment="Center"
+                     Margin="100 0 0 0"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1"
+            Grid.Row="3"
+            Grid.ColumnSpan="4"
+            Orientation="Horizontal">
+            <TextBlock Text="Пароль"
+               FontSize="25"
+               FontWeight="Heavy"
+               VerticalAlignment="Center"
+               />
+            <TextBox  Name="PasswordText"
+             Width="200"
+             Height="40"
+             PasswordChar="*"
+             VerticalAlignment="Center"
+             Margin="80 0 0 0"/>
+        </StackPanel>
+        <Button  
+            x:Name="LoginBtn"
+            Grid.Column="2"
+            Grid.Row="4"
+            Grid.ColumnSpan="2"
+            Margin="15"
+            Content="ВОЙТИ"
+            FontWeight="DemiBold"
+            Click="LoginBtn_Click"
+            />
+        <StackPanel 
+            Grid.Column="3"
+            Grid.Row="4"
+            Grid.ColumnSpan="2" 
+            Margin="27">
+            <TextBlock
+                FontWeight="Bold"
+                Text="ВОЙТИ КАК"
+            />
+            <ComboBox SelectionChanged="SelectingItemsControl_OnSelectionChanged" Name="RoleSelect">
+                <ComboBoxItem Name="studentSelection">
+                    <TextBlock Text="Студент" Name="studTxt"/>
+                </ComboBoxItem>
+                <ComboBoxItem Name="employeeSelection">
+                    <TextBlock Text="Сотрудник" Name="empTxt"/>
+                </ComboBoxItem>
+            </ComboBox>
+            
+        </StackPanel>
+    </Grid>
+</UserControl>

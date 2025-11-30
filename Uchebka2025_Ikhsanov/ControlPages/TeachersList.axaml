@@ -1,0 +1,70 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Uchebka2025_Ikhsanov.ControlPages.TeachersList">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Боковая панель -->
+        <Border Grid.Column="0"  Background="Gray" Width="200">
+            <StackPanel Margin="10">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Страницы" FontWeight="Bold"/>
+                    <Button Content="Главная страница" Margin="0,5" Click="MainPageEmployees"/>
+                    <Button Content="Дисциплины" Margin="0,5" Click="DisciplineList"/>
+                    <Button Content="Экзамены" Margin="0,5" Click="ExamsList"/>
+                    <StackPanel VerticalAlignment="Bottom">
+                        <Button Content="Выход" Margin="0,5" Click="Leave"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        
+        <!-- Основное содержимое -->
+        <!--<Grid Grid.Column="1" HorizontalAlignment="Left" Background="White">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+            <Image Source="C:\Users\bulat\source\repos\Shop\Shop\images\user.jpg" Height="200" Width="200"/>
+            <StackPanel  Orientation="Horizontal">
+                <StackPanel>
+                    <StackPanel Grid.Row="1" Margin="10" Orientation="Horizontal">
+                        <TextBlock FontSize="20" Foreground="Black">Логин: </TextBlock>
+                        <TextBox Width="200" Name="NameLoginText" Text="{Binding Login}" />
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Margin="10" Orientation="Horizontal">
+                        <TextBlock FontSize="20" Foreground="Black">ФИО: </TextBlock>
+                        <TextBox Width="214" Name="FullNameText" Text="{Binding FullName}" />
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Margin="10" Orientation="Horizontal">
+                        <TextBlock FontSize="20" Foreground="Black">Пароль: </TextBlock>
+                        <TextBox Width="184" Name="PasswordText" Text="{Binding Password}"/>
+                    </StackPanel>
+                
+                    <Button Content="Сохранить" Background="Gray" Foreground="Black" FontSize="20" Margin="10" Click="SaveButton"/>
+
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel Grid.Row="2" Margin="10" Orientation="Horizontal">
+                        <TextBlock FontSize="20" Foreground="Black">Почта: </TextBlock>
+                        <TextBox Width="200" Name="EmailText"  Text="{Binding Email}"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Margin="10" Orientation="Horizontal">
+                        <TextBlock FontSize="20" Foreground="Black">Адрес: </TextBlock>
+                        <TextBox Width="200" Name="AddressText" Text="{Binding Address}"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Margin="10" Orientation="Horizontal">
+                        <TextBlock FontSize="20" Foreground="Black">Номер телефона: </TextBlock>
+                        <TextBox Width="150" Name="PhoneNumText" Text="{Binding PhoneNum}"/>
+                    </StackPanel>
+                    
+                </StackPanel>
+            </StackPanel>
+            </StackPanel>
+        </Grid>-->
+    </Grid>
+</UserControl>

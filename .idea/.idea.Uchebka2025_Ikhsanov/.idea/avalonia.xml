@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Uchebka2025_Ikhsanov/App.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/Authorization.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/ControlMenu.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/DepartHeadList.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/DisciplineList.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/DisciplineListForStud.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/ExamList.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/ExamListForStud.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/MainPage.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/MainPageEmp.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/MainPageStud.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/StudentAuth.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/StudentsList.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/ControlPages/TeachersList.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/MainWindow.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
