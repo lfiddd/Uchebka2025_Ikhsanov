@@ -11,6 +11,24 @@ public partial class TeachersList : UserControl
     public TeachersList()
     {
         InitializeComponent();
+        if (VariableData.authuser.IdEmpNavigation == null || VariableData.authuser.IdStudentNavigation != null)
+        {
+            StudBtn.IsVisible = false;
+            TeachBtn.IsVisible = false;
+            HeadBtn.IsVisible = false;
+        }
+        
+        else if (VariableData.authuser.IdEmpNavigation != null &&
+                 int.Parse(VariableData.authuser.IdEmpNavigation.PositionEmp) == 3)
+        {
+            TeachBtn.IsVisible = false;
+            HeadBtn.IsVisible = false;
+        }
+        else if (VariableData.authuser.IdEmpNavigation != null &&
+                 int.Parse(VariableData.authuser.IdEmpNavigation.PositionEmp) == 2)
+        {
+            HeadBtn.IsVisible = false;
+        }
     }
 
     private void MainPageEmployees(object? sender, RoutedEventArgs e)
@@ -41,5 +59,10 @@ public partial class TeachersList : UserControl
     private void DepartHeadLists(object? sender, RoutedEventArgs e)
     {
         NavigationService.NavigateTo<DepartHeadList>();
+    }
+
+    private void TeachList(object? sender, RoutedEventArgs e)
+    {
+        NavigationService.NavigateTo<TeachersList>();
     }
 }

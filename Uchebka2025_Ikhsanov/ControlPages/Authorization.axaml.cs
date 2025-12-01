@@ -22,10 +22,10 @@ public partial class Authorization : UserControl
     {
         string login = LoginText.Text;
         string password = PasswordText.Text;
-        var d = App.DbContext.Logins.FirstOrDefault(us => us.Login1 == login && us.LPassword == password);
+        var d = App.DbContext.Logins.FirstOrDefault(us => us.Login1 == login && us.PasswordL == password);
         if (d != null)
         {
-            VariableData.authEmployee = d;
+            VariableData.authuser = d;
             await MessageBoxManager.GetMessageBoxStandard("Успех", "Добро пожаловать").ShowAsync();
             NavigationService.NavigateTo<MainPageEmp>();
 
@@ -37,25 +37,5 @@ public partial class Authorization : UserControl
         }
     }
     
-    private void SelectingItemsControl_OnSelectionChanged(object? sender, SelectionChangedEventArgs e)
-    {
-        if (e.AddedItems.Count > 0)
-        {
-            var selectedItem = e.AddedItems[0];
-
-            if (selectedItem is ComboBoxItem cbi)
-            {
-                string role = cbi.Name; 
-
-                if (role == "studentSelection")
-                {
-                    NavigationService.NavigateTo<StudentAuth>();
-                }
-                else if (role == "employeeSelection")
-                {
-                    NavigationService.NavigateTo<Authorization>();
-                }
-            }
-        }
-    }
+    
 }

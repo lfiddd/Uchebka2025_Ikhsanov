@@ -64,7 +64,7 @@
         </StackPanel>
         <Button  
             x:Name="LoginBtn"
-            Grid.Column="2"
+            Grid.Column="3"
             Grid.Row="4"
             Grid.ColumnSpan="2"
             Margin="15"
@@ -72,24 +72,6 @@
             FontWeight="DemiBold"
             Click="LoginBtn_Click"
             />
-        <StackPanel 
-            Grid.Column="3"
-            Grid.Row="4"
-            Grid.ColumnSpan="2" 
-            Margin="27">
-            <TextBlock
-                FontWeight="Bold"
-                Text="ВОЙТИ КАК"
-            />
-            <ComboBox SelectionChanged="SelectingItemsControl_OnSelectionChanged" Name="RoleSelect">
-                <ComboBoxItem Name="studentSelection">
-                    <TextBlock Text="Студент"/>
-                </ComboBoxItem>
-                <ComboBoxItem Name="employeeSelection">
-                    <TextBlock Text="Сотрудник"/>
-                </ComboBoxItem>
-            </ComboBox>
-            
-        </StackPanel>
+        
     </Grid>
 </UserControl>

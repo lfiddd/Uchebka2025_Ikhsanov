@@ -41,8 +41,6 @@ public partial class AppDbContext : DbContext
 
     public virtual DbSet<Login> Logins { get; set; }
 
-    public virtual DbSet<LoginStud> LoginStuds { get; set; }
-
     public virtual DbSet<SmallPopulationLargeArea> SmallPopulationLargeAreas { get; set; }
 
     public virtual DbSet<Specialty> Specialties { get; set; }
@@ -293,34 +291,25 @@ public partial class AppDbContext : DbContext
 
         modelBuilder.Entity<Login>(entity =>
         {
-            entity.HasKey(e => e.IdLogin).HasName("login_pkey");
+            entity.HasKey(e => e.IdLogin).HasName("logins_pkey");
 
-            entity.ToTable("login");
+            entity.ToTable("logins");
+
+            entity.HasIndex(e => e.Login1, "logins_login_key").IsUnique();
 
             entity.Property(e => e.IdLogin).HasColumnName("id_login");
-            entity.Property(e => e.IdEmployee).HasColumnName("id_employee");
-            entity.Property(e => e.LPassword).HasColumnName("l_password");
-            entity.Property(e => e.Login1).HasColumnName("login");
-
-            entity.HasOne(d => d.IdEmployeeNavigation).WithMany(p => p.Logins)
-                .HasForeignKey(d => d.IdEmployee)
-                .HasConstraintName("login_id_employee_fkey");
-        });
-
-        modelBuilder.Entity<LoginStud>(entity =>
-        {
-            entity.HasKey(e => e.IdLoginStud).HasName("login_stud_pkey");
-
-            entity.ToTable("login_stud");
-
-            entity.Property(e => e.IdLoginStud).HasColumnName("id_login_stud");
+            entity.Property(e => e.IdEmp).HasColumnName("id_emp");
             entity.Property(e => e.IdStudent).HasColumnName("id_student");
-            entity.Property(e => e.LPassword).HasColumnName("l_password");
-            entity.Property(e => e.Login).HasColumnName("login");
+            entity.Property(e => e.Login1).HasColumnName("login");
+            entity.Property(e => e.PasswordL).HasColumnName("password_l");
 
-            entity.HasOne(d => d.IdStudentNavigation).WithMany(p => p.LoginStuds)
+            entity.HasOne(d => d.IdEmpNavigation).WithMany(p => p.Logins)
+                .HasForeignKey(d => d.IdEmp)
+                .HasConstraintName("logins_id_emp_fkey");
+
+            entity.HasOne(d => d.IdStudentNavigation).WithMany(p => p.Logins)
                 .HasForeignKey(d => d.IdStudent)
-                .HasConstraintName("login_stud_id_student_fkey");
+                .HasConstraintName("logins_id_student_fkey");
         });
 
         modelBuilder.Entity<SmallPopulationLargeArea>(entity =>

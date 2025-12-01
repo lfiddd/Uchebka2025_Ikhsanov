@@ -9,9 +9,13 @@ public partial class Login
 
     public string Login1 { get; set; } = null!;
 
-    public string LPassword { get; set; } = null!;
+    public string PasswordL { get; set; } = null!;
 
-    public int? IdEmployee { get; set; }
+    public int? IdStudent { get; set; }
 
-    public virtual Employee? IdEmployeeNavigation { get; set; }
+    public int? IdEmp { get; set; }
+
+    public virtual Employee? IdEmpNavigation { get; set; }
+
+    public virtual Student? IdStudentNavigation { get; set; }
 }

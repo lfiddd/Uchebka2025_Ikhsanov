@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Uchebka2025_Ikhsanov")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e44e93602ae6831de2473c6415a043f129c151d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa1b05dc92d42b2d9563f2668a6e9bf3983288e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Uchebka2025_Ikhsanov")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Uchebka2025_Ikhsanov")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

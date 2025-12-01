@@ -14,7 +14,6 @@ public partial class App : Application
         DbContext.Employees.ToList();
         DbContext.Students.ToList();
         DbContext.Logins.ToList();
-        DbContext.LoginStuds.ToList();
         DbContext.Exams.ToList();
         DbContext.Disciplines.ToList();
         DbContext.Departments.ToList();
