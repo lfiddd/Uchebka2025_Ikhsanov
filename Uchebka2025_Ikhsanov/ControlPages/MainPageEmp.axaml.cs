@@ -19,7 +19,7 @@ public partial class MainPageEmp : UserControl
             HeadBtn.IsVisible = false;
         }
         
-        else if (VariableData.authuser.IdEmpNavigation != null &&
+        else if (VariableData.authuser.IdStudentNavigation == null &&
                  int.Parse(VariableData.authuser.IdEmpNavigation.PositionEmp) == 3)
         {
             TeachBtn.IsVisible = false;
@@ -30,6 +30,8 @@ public partial class MainPageEmp : UserControl
         {
             HeadBtn.IsVisible = false;
         }
+        
+        DataContext = new ProfileViewModel();
     }
 
     private void Leave(object? sender, RoutedEventArgs e)

@@ -15,9 +15,11 @@ public partial class Exam
 
     public int? ExaminerTab { get; set; }
 
-    public string? Classroom { get; set; }
+    public int? Classroom { get; set; }
 
     public int? Grade { get; set; }
+
+    public virtual Classroom? ClassroomNavigation { get; set; }
 
     public virtual Discipline? DisciplineCodeNavigation { get; set; }
 

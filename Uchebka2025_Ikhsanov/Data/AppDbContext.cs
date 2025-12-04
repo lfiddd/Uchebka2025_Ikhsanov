@@ -19,6 +19,8 @@ public partial class AppDbContext : DbContext
 
     public virtual DbSet<Application> Applications { get; set; }
 
+    public virtual DbSet<Classroom> Classrooms { get; set; }
+
     public virtual DbSet<ContinentSummary> ContinentSummaries { get; set; }
 
     public virtual DbSet<Country> Countries { get; set; }
@@ -95,6 +97,16 @@ public partial class AppDbContext : DbContext
             entity.HasOne(d => d.IdSpecialtyNavigation).WithMany(p => p.Applications)
                 .HasForeignKey(d => d.IdSpecialty)
                 .HasConstraintName("application_id_specialty_fkey");
+        });
+
+        modelBuilder.Entity<Classroom>(entity =>
+        {
+            entity.HasKey(e => e.IdClass).HasName("classroom_pkey");
+
+            entity.ToTable("classroom");
+
+            entity.Property(e => e.IdClass).HasColumnName("id_class");
+            entity.Property(e => e.ClassRoom).HasColumnName("class_room");
         });
 
         modelBuilder.Entity<ContinentSummary>(entity =>
@@ -235,14 +247,16 @@ public partial class AppDbContext : DbContext
             entity.ToTable("exam");
 
             entity.Property(e => e.IdExam).HasColumnName("id_exam");
-            entity.Property(e => e.Classroom)
-                .HasMaxLength(20)
-                .HasColumnName("classroom");
+            entity.Property(e => e.Classroom).HasColumnName("classroom");
             entity.Property(e => e.DisciplineCode).HasColumnName("discipline_code");
             entity.Property(e => e.ExamDate).HasColumnName("exam_date");
             entity.Property(e => e.ExaminerTab).HasColumnName("examiner_tab");
             entity.Property(e => e.Grade).HasColumnName("grade");
             entity.Property(e => e.StudentReg).HasColumnName("student_reg");
+
+            entity.HasOne(d => d.ClassroomNavigation).WithMany(p => p.Exams)
+                .HasForeignKey(d => d.Classroom)
+                .HasConstraintName("fk_exam_classroom");
 
             entity.HasOne(d => d.DisciplineCodeNavigation).WithMany(p => p.Exams)
                 .HasForeignKey(d => d.DisciplineCode)

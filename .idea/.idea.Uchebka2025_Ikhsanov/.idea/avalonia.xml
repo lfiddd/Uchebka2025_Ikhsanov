@@ -18,6 +18,12 @@
         <entry key="Uchebka2025_Ikhsanov/ControlPages/StudentsList.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
         <entry key="Uchebka2025_Ikhsanov/ControlPages/TeachersList.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
         <entry key="Uchebka2025_Ikhsanov/MainWindow.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/Views/ChangeGradeInExam.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/Views/CreateAndChangeDeparts.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/Views/CreateAndChangeDisciplines.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/Views/CreateAndChangeExams.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/Views/CreateAndChangeStudents.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
+        <entry key="Uchebka2025_Ikhsanov/Views/CreateAndChangeTeachers.axaml" value="Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov.csproj" />
       </map>
     </option>
   </component>

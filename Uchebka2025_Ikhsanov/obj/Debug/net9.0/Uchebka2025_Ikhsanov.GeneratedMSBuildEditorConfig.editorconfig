@@ -55,3 +55,21 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/bulat/Documents/КТИТС/Учебка 2025/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/bulat/Documents/КТИТС/Учебка 2025/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Views/ChangeGradeInExam.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/bulat/Documents/КТИТС/Учебка 2025/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Views/CreateAndChangeDeparts.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/bulat/Documents/КТИТС/Учебка 2025/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Views/CreateAndChangeDisciplines.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/bulat/Documents/КТИТС/Учебка 2025/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Views/CreateAndChangeExams.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/bulat/Documents/КТИТС/Учебка 2025/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Views/CreateAndChangeStudents.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/bulat/Documents/КТИТС/Учебка 2025/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Uchebka2025_Ikhsanov/Views/CreateAndChangeTeachers.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
